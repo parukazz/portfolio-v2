@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="container fixed top-0 left-0 right-0">
+    <header className="fixed z-50 px-[5%] lg:px-[70px] top-0 left-0 right-0">
       <nav className="flex justify-between items-center py-10">
         <div>
           <img src={logo} alt="logo" />
