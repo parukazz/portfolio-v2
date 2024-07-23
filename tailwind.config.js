@@ -8,9 +8,9 @@ export default {
         padding: "0.75rem",
         sm: "1rem",
         md: "1.5rem",
-        lg: "2rem",
+        lg: "1.5rem",
         xl: "2.5rem",
-        "2xl": "3rem",
+        "2xl": "1rem",
       },
       colors: {
         primary: "#020202",
@@ -21,7 +21,7 @@ export default {
         },
       },
       fontSize: {
-        brand: "8.875rem",
+        brand: "10rem",
         heading: "3.75rem",
         paragraph: "1.125rem",
       },
