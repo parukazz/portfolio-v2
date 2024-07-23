@@ -1,8 +1,10 @@
 import Header from "../Header";
 
+
 const Hero = () => {
+
   return (
-    <div>
+    <div className="">
       <Header />
     </div>
   );
