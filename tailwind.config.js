@@ -13,7 +13,7 @@ export default {
         "2xl": "3rem",
       },
       colors: {
-        primary: "#121212",
+        primary: "#020202",
         accent: "#B4E925",
         txt: {
           DEFAULT: "#FFFFFF",
