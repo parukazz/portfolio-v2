@@ -7,8 +7,16 @@
     color-scheme: dark;
     font-family: "Inter Tight", sans-serif;
   }
+
+  html {
+    @apply scroll-smooth;
+  }
 }
 
 .white-hover {
-  @apply hover:text-white transition duration-300
+  @apply hover:text-white transition duration-300;
+}
+
+.icon-hero {
+  @apply fill-txt-muted group-hover:fill-accent transition duration-300;
 }
