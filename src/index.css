@@ -8,3 +8,7 @@
     font-family: "Inter Tight", sans-serif;
   }
 }
+
+.white-hover {
+  @apply hover:text-white transition duration-300
+}
