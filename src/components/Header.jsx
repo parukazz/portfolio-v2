@@ -1,18 +1,8 @@
 import logo from "../assets/logo.png";
-import { useEffect } from "react";
-import particlesJS from "particles.js";
-import particlesJSConfig from "../assets/particle/particlesjs-config.json";
 
 const Header = () => {
-
-  useEffect(() => {
-    particlesJS.load('particles-js', particlesJSConfig, () => {
-      console.log('callback - particles.js config loaded');
-    });
-  }, []);
-
   return (
-    <header className="container fixed top-0 left-0 right-0" id="particles-js">
+    <header className="container fixed top-0 left-0 right-0">
       <nav className="flex justify-between items-center py-10">
         <div>
           <img src={logo} alt="logo" />
