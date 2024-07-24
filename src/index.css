@@ -20,3 +20,8 @@
 .icon-hero {
   @apply fill-txt-muted group-hover:fill-accent transition duration-300;
 }
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
