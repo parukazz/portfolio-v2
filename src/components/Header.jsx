@@ -37,7 +37,7 @@ const Header = () => {
             ))}
           </ul>
           <div className="w-max text-3xl md:text-base">
-            <button className="uppercase white-hover">[download resume]</button>
+            <button className="uppercase white-hover">[look my resume]</button>
           </div>
         </div>
         <div className="md:hidden z-50 text-sm">
