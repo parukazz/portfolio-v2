@@ -25,6 +25,9 @@ export default {
         heading: "3.75rem",
         paragraph: "1.125rem",
       },
+      animation: {
+        'spin-slow': "spin 3s linear infinite",
+      }
     },
   },
   plugins: [],
