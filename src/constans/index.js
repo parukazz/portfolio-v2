@@ -1,4 +1,8 @@
 import heroVideo from "../assets/videos/hero-video.mp4";
+import cssLogo from "../assets/icons/css.svg";
+import jsLogo from "../assets/icons/js.svg";
+import reactLogo from "../assets/icons/react.svg";
+import tailwindLogo from "../assets/icons/tailwind.svg";
 
 export const heroBG = heroVideo;
 
@@ -25,4 +29,11 @@ export const abouttext = [
   {
     text: "When I’m not creating or exploring web technologies, I’m probably watching movies, football or playing games.",
   },
+];
+
+export const logoTech = [
+  { src: cssLogo },
+  { src: jsLogo },
+  { src: reactLogo },
+  { src: tailwindLogo },
 ];
