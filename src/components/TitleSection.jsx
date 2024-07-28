@@ -12,7 +12,7 @@ const TitleSection = ({ section, title, titleCenter, sectionCenter }) => {
 
   return (
     <div className={sectionClasses}>
-      <span className="font-extrabold text-6xl md:text-8xl bg-gradient-to-b from-zinc-600 to-zinc-950 bg-clip-text">
+      <span className="font-extrabold text-6xl md:text-8xl bg-gradient-to-b from-zinc-600 to-zinc-950 bg-clip-text text-center">
         {section}
       </span>
       <div className={classes}>
