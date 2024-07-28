@@ -27,7 +27,7 @@ export default {
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
-        "loop-scroll": "loop-scroll 50s linear infinite",
+        "loop-scroll": "loop-scroll 25s linear infinite",
       },
       keyframes: {
         "loop-scroll": {
