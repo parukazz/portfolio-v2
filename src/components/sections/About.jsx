@@ -3,6 +3,7 @@ import Button from "../Button";
 import TitleSection from "../TitleSection";
 import Photo1 from "../../assets/photo-1.png";
 import Photo2 from "../../assets/photo-2.png";
+import PhotoBox from "../PhotoBox";
 
 const About = () => {
   return (
@@ -27,16 +28,22 @@ const About = () => {
                   </p>
                 ))}
               </div>
-              <Button />
+              <Button href="#" label="LET'S TALK" />
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-9 md:gap-0">
-            <div className="">
-              <img src={Photo1} alt="" />
-            </div>
-            <div className="">
-              <img src={Photo2} alt="" />
-            </div>
+            <PhotoBox
+              classBox="group hover:scale-95 hover:-rotate-2"
+              classImg="group-hover:scale-110"
+              src={Photo1}
+              alt="Photo 1"
+            />
+            <PhotoBox
+              classBox="group hover:scale-95 hover:rotate-2"
+              classImg="group-hover:scale-110"
+              src={Photo2}
+              alt="Photo 2"
+            />
           </div>
         </div>
       </div>
