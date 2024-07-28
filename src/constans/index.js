@@ -1,8 +1,5 @@
 import heroVideo from "../assets/videos/hero-video.mp4";
-import cssLogo from "../assets/icons/css.svg";
-import jsLogo from "../assets/icons/js.svg";
-import reactLogo from "../assets/icons/react.svg";
-import tailwindLogo from "../assets/icons/tailwind.svg";
+import uedashika from "../assets/projects/uedashika.png";
 
 export const heroBG = heroVideo;
 
@@ -31,9 +28,16 @@ export const abouttext = [
   },
 ];
 
-export const logoTech = [
-  { src: cssLogo },
-  { src: jsLogo },
-  { src: reactLogo },
-  { src: tailwindLogo },
+export const projects = [
+  {
+    id: 0,
+    title: "UedashikA Landing Page",
+    link: "https://parukazz.github.io/uedashika",
+    category: "Dental Clinic",
+    tech: "Vanilla JS, TailwindCSS",
+    repo: "parukazz/uedashika",
+    linkRepo: "https://github.com/parukazz/uedashika",
+    img: uedashika,
+    alt: "Ueda Project"
+  },
 ];
