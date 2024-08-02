@@ -5,14 +5,14 @@ import TitleSection from "../TitleSection";
 const Projects = () => {
   return (
     <section className="bg-accent relative px-[5%] md:px-[70px] py-20 w-full">
-      <div className="bg-primary w-full px-8 py-12 rounded-2xl">
-        <TitleSection section="PROJECTS" title="MY WORKS" />
+      <div className="bg-primary w-full py-12 rounded-2xl">
+        <TitleSection section="PROJECTS" title="MY WORKS" paddingX />
         {projects.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col md:flex-row mt-16 px-16 justify-between items-center gap-32"
+            className="flex flex-col md:flex-row py-16 px-16 justify-between items-center gap-32"
           >
-            <div className="flex flex-col gap-[72px]">
+            <div className="flex flex-col w-1/2 gap-[72px]">
               <div className="flex flex-col items-end">
                 <h2 className="text-5xl md:text-heading font-semibold pr-10 leading-tight mb-11">
                   {item.title}
@@ -40,8 +40,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <img src={item.img} alt={item.alt} />
+            <div className="w-1/2">
+              <img src={item.img} alt={item.alt} className="rounded-xl" />
             </div>
           </div>
         ))}
