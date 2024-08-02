@@ -1,14 +1,20 @@
+/* eslint-disable react/prop-types */
 import rectangleIcon from "../assets/icons/rectangle.svg";
 
-// eslint-disable-next-line react/prop-types
-const TitleSection = ({ section, title, titleCenter, sectionCenter }) => {
+const TitleSection = ({
+  section,
+  title,
+  titleCenter,
+  sectionCenter,
+  paddingX,
+}) => {
   const classes = `flex items-center gap-[10px] absolute top-0 bottom-0 left-0 right-0 ${
     titleCenter ? "justify-center" : "justify-start"
-  }`;
+  } ${paddingX ? "px-8" : ""}`;
 
   const sectionClasses = `relative flex ${
     sectionCenter ? "justify-center" : "justify-start"
-  }`;
+  } ${paddingX ? "px-8" : ""}`;
 
   return (
     <div className={sectionClasses}>
