@@ -1,5 +1,6 @@
 import heroVideo from "../assets/videos/hero-video.mp4";
 import uedashika from "../assets/projects/uedashika.png";
+import sohara from "../assets/projects/sohara.png";
 
 export const heroBG = heroVideo;
 
@@ -39,5 +40,16 @@ export const projects = [
     linkRepo: "https://github.com/parukazz/uedashika",
     img: uedashika,
     alt: "Ueda Project"
+  },
+  {
+    id: 1,
+    title: "Sohara Landing Page",
+    link: "https://parukazz.github.io/sohara",
+    category: "URL Shortener",
+    tech: "HTML, CSS, Javascript",
+    repo: "parukazz/sohara",
+    linkRepo: "https://github.com/parukazz/sohara",
+    img: sohara,
+    alt: "Sohara Project",
   },
 ];
