@@ -4,24 +4,21 @@ import TitleSection from "../TitleSection";
 
 const Projects = () => {
   return (
-    <section className="bg-accent relative px-[5%] md:px-[70px] py-20 w-full">
-      <div className="bg-primary w-full py-12 rounded-2xl">
-        <TitleSection section="PROJECTS" title="MY WORKS" paddingX />
-        {projects.map((item) => (
-          <div
-            key={item.id}
-            className="flex flex-col md:flex-row py-16 px-16 justify-between items-center gap-32"
-          >
-            <div className="flex flex-col w-1/2 gap-[72px]">
+    <section className="bg-accent flex flex-col gap-9 relative px-[5%] md:px-[70px] py-20 w-full">
+      {projects.map((item) => (
+        <div key={item.id} className="bg-primary w-full pt-12 pb-0 md:pb-12 px-5 md:px-16 rounded-2xl">
+          <TitleSection section="PROJECTS" title="MY WORKS" />
+          <div className="flex flex-col md:flex-row py-16 justify-between items-center gap-32">
+            <div className="flex flex-col md:w-1/2 gap-[72px]">
               <div className="flex flex-col items-end">
-                <h2 className="text-5xl md:text-heading font-semibold pr-10 leading-tight mb-11">
+                <h2 className="text-4xl md:text-5xl md:text-heading font-semibold pr-10 leading-tight mb-11">
                   {item.title}
                 </h2>
                 <Button label="GO TO LINK" href={item.link} />
               </div>
               <div className="w-full flex justify-end">
                 <div className="flex justify-between gap-14">
-                  <div className="font-semibold text-paragraph leading-6 flex flex-col gap-6">
+                  <div className="font-semibold text-base md:text-paragraph leading-6 flex flex-col gap-6">
                     <p>Category:</p>
                     <p>Tech Stack:</p>
                     <p>Github Repo:</p>
@@ -40,12 +37,12 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2">
               <img src={item.img} alt={item.alt} className="rounded-xl" />
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 };
