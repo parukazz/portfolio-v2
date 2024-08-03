@@ -25,6 +25,9 @@ export default {
         heading: "3.75rem",
         paragraph: "1.125rem",
       },
+      backgroundImage: {
+        'photo-footer': "url('/src/assets/photo-footer.png')",
+      },
       animation: {
         "spin-slow": "spin 3s linear infinite",
         "loop-scroll": "loop-scroll 25s linear infinite",
