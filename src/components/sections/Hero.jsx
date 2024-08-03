@@ -1,10 +1,8 @@
 import { quoteHero, tagline } from "../../constans";
 import ButtonScroll from "../ButtonScroll";
-import GithubIcon from "../icons/GithubIcon";
-import InstagramIcon from "../icons/InstagramIcon";
-import LinkedinIcon from "../icons/LinkedinIcon";
 import Header from "../Header";
 import ParticlesComponent from "../ParticlesComponent";
+import SocialIcon from "../SocialIcon";
 
 const Hero = () => {
   return (
@@ -26,17 +24,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col-reverse md:flex-row items-center mt-16 gap-[30px]">
               <ButtonScroll />
-              <div className="flex items-center gap-5">
-                <a href="#">
-                  <GithubIcon className="icon-hero" size="24" />
-                </a>
-                <a href="#">
-                  <InstagramIcon className="icon-hero" size="24" />
-                </a>
-                <a href="#">
-                  <LinkedinIcon className="icon-hero" size="24" />
-                </a>
-              </div>
+              <SocialIcon gap="gap-5" />
             </div>
           </div>
         </div>
