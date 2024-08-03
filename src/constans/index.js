@@ -32,7 +32,7 @@ export const abouttext = [
 export const projects = [
   {
     id: 0,
-    title: "UedashikA Landing Page",
+    title: "UedashikA - Landing Page",
     link: "https://parukazz.github.io/uedashika",
     category: "Dental Clinic",
     tech: "Vanilla JS, TailwindCSS",
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Sohara Landing Page",
+    title: "Sohara - Landing Page",
     link: "https://parukazz.github.io/sohara",
     category: "URL Shortener",
     tech: "HTML, CSS, Javascript",
@@ -53,3 +53,5 @@ export const projects = [
     alt: "Sohara Project",
   },
 ];
+
+export const myMail = "talk@parukazziyi.link";
