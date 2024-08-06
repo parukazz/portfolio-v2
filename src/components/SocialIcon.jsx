@@ -2,7 +2,7 @@
 import GithubIcon from "./icons/GithubIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const SocialIcon = ({ iconSize = 24, white, gap, hidden }) => {
   const classes = `icon-hero ${white ? "fill-txt" : "fill-txt-muted"}`;
