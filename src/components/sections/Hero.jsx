@@ -13,14 +13,15 @@ const Hero = () => {
       <div className="relative w-full min-h-screen flex items-end pb-12 md:pb-24">
         <div className="flex flex-col md:flex-row w-full items-center justify-between gap-4 md:gap-0">
           <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 1, 1.01]
-          }}
-          className="uppercase font-extrabold leading-none text-6xl md:text-brand">
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 1, 1.01],
+            }}
+            className="uppercase font-extrabold leading-none text-6xl md:text-brand"
+          >
             <h1>paruk</h1>
             <h1>azziyi</h1>
           </motion.div>
