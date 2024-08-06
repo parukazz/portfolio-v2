@@ -6,15 +6,6 @@ import SocialIcon from "../SocialIcon";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const popUpElements = {
-    hidden: { opacity: 0, scale: 0.5 },
-    show: { opacity: 1, scale: 1 },
-    transition: {
-      duration: 0.8,
-      delay: 0.5,
-      ease: [0, 0.71, 1, 1.01],
-    },
-  };
 
   return (
     <div className="text-txt px-[5%] lg:px-[70px]">
