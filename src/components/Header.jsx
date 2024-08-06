@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navigation } from "../constans";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -13,8 +14,19 @@ const Header = () => {
     }
   };
 
+  const fadeDownVariants = {
+    hidden: { opacity: 0, y: -10 },
+    show: { opacity: 1, y: 0, transition: { type: "spring" } },
+  };
+
   return (
-    <header className={`fixed z-50 px-[5%] w-full lg:px-[70px] top-0 left-0`}>
+    <motion.header
+      variants={fadeDownVariants}
+      initial="hidden"
+      animate="show"
+      viewport={{ once: true }}
+      className={`fixed z-50 px-[5%] w-full lg:px-[70px] top-0 left-0`}
+    >
       <nav className="flex justify-between items-center py-10">
         <div className="z-50">
           <img src={logo} alt="logo" />
@@ -55,7 +67,7 @@ const Header = () => {
           </button>
         </div>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
