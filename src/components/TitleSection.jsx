@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import rectangleIcon from "../assets/icons/rectangle.svg";
+import { motion } from "framer-motion";
 
 const TitleSection = ({
   section,
@@ -16,8 +17,23 @@ const TitleSection = ({
     sectionCenter ? "justify-center" : "justify-start"
   } ${paddingX ? "px-8" : ""}`;
 
+  const fadeRightVariants = {
+    hidden: { opacity: 0, x: -100 },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: [0, 0.71, 1, 1.01] },
+    },
+  };
+
   return (
-    <div className={sectionClasses}>
+    <motion.div
+      variants={fadeRightVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className={sectionClasses}
+    >
       <span className="font-extrabold text-6xl md:text-8xl bg-gradient-to-b from-zinc-600 to-zinc-950 bg-clip-text text-center">
         {section}
       </span>
@@ -36,7 +52,7 @@ const TitleSection = ({
           }`}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
